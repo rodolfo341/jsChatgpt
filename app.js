@@ -48,7 +48,7 @@ console.log(comidaFavorita);
 // esTravieso: true o false
 let nombreMascota = "gato";
 let raza = "kiltro";
-let edadMascota = 3;
+// let edadMascota = 3;
 let jugueteFavorito = "estambre";
 let esTravieso = true;
 // Ejemplo de salida en consola:
@@ -57,26 +57,52 @@ console.log("Mi mascota se llama " + nombreMascota + ", es un " + raza + " de " 
 /**** Capitulo 3 *****/
 // Ejercicios
 // 1.- Suma dos números y muestra el resultado.
+let a = 3;
+let b = 5;
+let c = a + b;
+console.log(c);
 
 // 2.- Resta dos números y muestra el resultado.
+c = b - a;
+console.log(c)
 
 // 3.- Multiplica dos números y muestra el resultado.
+c = a * b;
+console.log(c)
 
 // 4.- Divide dos números y muestra el resultado.
+c = a / b;
+console.log(c)
 
 // 5.- Usa el operador % con dos números.
+c = b % a;
+console.log(c)
 
 // 6.- Compara si 10 es mayor que 5.
+c = 10 > 5;
+console.log(c)
 
 // 7.- Compara si 4 es igual a "4" usando ==.
+c = 4 == "4";
+console.log(c)
 
 // 8.- Compara si 4 es estrictamente igual a "4" usando ===.
+c = 4 === "4";
+console.log(c)
 
 // 9.- Usa && para ver si dos condiciones se cumplen.
+if ( 4 == "4" && 4 === "4") {
+    console.log(true)
+}
 
 // 10.- Usa || para ver si al menos una condición se cumple.
+if ( 4 == "4" || 4 === "4") {
+    console.log(true)
+}
 
 // 11.- Usa ! para negar un valor booleano.
+c = !true;
+console.log(c);
 
 // Desafío Final
 // Crea un pequeño “reporte” de mascota como este, pero que use operadores y comparaciones:
@@ -84,7 +110,9 @@ console.log("Mi mascota se llama " + nombreMascota + ", es un " + raza + " de " 
 // let edadMascota = 3;
 // let esCachorro = edadMascota < 2;
 // let tieneJuguete = true;
-
-// console.log("¿Es cachorro? " + esCachorro);
-// console.log("¿Es cachorro y tiene juguete? " + (esCachorro && tieneJuguete));
-// console.log("¿No es cachorro? " + !esCachorro);
+let edadMascota = 3;
+let esCachorro = edadMascota < 2;
+let tieneJuguete = true;
+console.log("¿Es cachorro? " + esCachorro);
+console.log("¿Es cachorro y tiene juguete? " + (esCachorro && tieneJuguete));
+console.log("¿No es cachorro? " + !esCachorro);
