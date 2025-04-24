@@ -268,15 +268,96 @@ function saludarUsuario(nombre) {
 }
 
 // Crea una función llamada doble que reciba un número y retorne el doble de ese número.
-numero = 4;
-console.log(`El dobre de ${numero} es: ${doble(numero)}`)
+let num = 4;
+console.log(`El dobre de ${num} es: ${doble(num)}`)
 function doble(num) {
-    return num * num;
+    return num * 2;
 }
 
 // Crea una función llamada esPar que reciba un número y retorne true si es par, false si no.
+function esPar(num) {
+    return num % 2 === 0;
+}
 
 // Crea una función llamada areaRectangulo que reciba base y altura y retorne el área.
+console.log(areaRectangulo(3, 5));
+function areaRectangulo(b, a) {
+    return a * b;
+}
 
 // Crea una función llamada imprimirNumeros que imprima del 1 al número que le pases como parámetro.
+num = 10;
+imprimirNumeros(num);
+function imprimirNumeros(num) {
+    for (let i = 1; i <= num; i++) {
+        console.log(i);
+    }
+}
+
+// Crea una función llamada evaluarNota que reciba una nota (número del 1 al 10) y devuelva un mensaje según la nota:
+
+// 1 a 3 → "Reprobado"
+// 4 a 5 → "En proceso"
+// 6 a 10 → "Aprobado"
+
+let nota = 5;
+console.log(evaluarNota(5))
+function evaluarNota(nota) {
+    if (nota <= 3) return "Reprobado";
+    else if (nota <= 5) return "En proceso";
+    else if (nota <= 10) return "Aprobado";
+    else return "error";
+}
+
+
+
+/****** capitulo 7 *****/
+// Crea un arreglo con tus 3 comidas favoritas.
+let comidas = ["fideos", "asado", "cazuela"];
+
+// Muestra la segunda comida en la consola.
+console.log(comidas[1]);
+
+// Agrega una nueva comida al final del arreglo.
+comidas.push("arroz");
+
+// Elimina la primera comida del arreglo.
+comidas.shift();
+
+// ¿Cuántas comidas hay ahora en el arreglo?
+console.log(comidas.length);
+
+// Verifica si la comida "pizza" está en el arreglo.
+if (comidas.includes("pizza")) console.log(true);
+else console.log(false);
+
+// Une las comidas con comas y muéstralas como un solo string.
+console.log(comidas.join(","));
+
+// Crea un nuevo arreglo con solo las dos primeras comidas usando .slice().
+let comidas2 = comidas.slice(0, 2);
+
+// Quita la segunda comida del arreglo original usando .splice().
+comidas.splice(1, 1);
+
+// Crea una función llamada mostrarLista que reciba un arreglo y:
+function mostrarLista(arre) {
+    if (arre.length === 0) console.log("La lista esta vacia");
+    else {
+        for (let ii = 0; ii < arre.length; ii++) {
+            console.log(`${ii + 1} ${arre[ii]}`);
+        }
+    }
+}
+// Si el arreglo está vacío, diga: "La lista está vacía".
+
+// Si no, que imprima cada elemento con su número, así:
+
+// 1. manzana
+// 2. plátanoii
+// 3. naranja
+
+
+
+
 
