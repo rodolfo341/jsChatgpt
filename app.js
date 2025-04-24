@@ -359,29 +359,20 @@ function mostrarLista(arre) {
 const robot = {
     modelo: "Asimov",
     energia: 26,
-    recargar: function() {
-      this.energia += 10;
+    recargar: function () {
+        this.energia += 10;
     },
-    estado: function() {
-      console.log(`Soy el modelo ${this.modelo} y tengo ${this.energia} unidades de energía.`);
+    estado: function () {
+        console.log(`Soy el modelo ${this.modelo} y tengo ${this.energia} unidades de energía.`);
     },
-    usarEnergia: function(x){
-        this.energia -=x;
+    usarEnergia: function (x) {
+        this.energia -= x;
     },
-    estado: function(){
-        confirm.log(`${this.modelo} tiene ${this.energia}% de energía.`);
+    estado: function () {
+        console.log(`${this.modelo} tiene ${this.energia}% de energía.`);
+    },
+    actualizarModelo: function (cadena) {
+        this.modelo = cadena;
     }
-  };
-  
-//   robot.estado(); // Llamada de prueba
-  
-//   3. Crear método de estado:
-
-//   Agrega un método al objeto robot llamado estado que imprima en consola:
-//   "[modelo] tiene [energia]% de energía."
-  
-//   ¡Inténtalo tú! Cuando lo tengas, me lo muestras.
-
-
-
+};
 
