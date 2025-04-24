@@ -376,3 +376,26 @@ const robot = {
     }
 };
 
+// Crea un nuevo objeto llamado cuentaBancaria que tenga:
+// Una propiedad saldo que empiece en 0.
+// Un método depositar(cantidad) que sume al saldo.
+// Un método retirar(cantidad) que reste del saldo solo si hay suficiente dinero.
+// Un método mostrarSaldo() que muestre el saldo actual en consola.
+
+const cuentaBancaria = {
+    saldo: 0,
+    depositar: function (cantidad) {
+        this.saldo += cantidad;
+    },
+    retirar: function (cantidad) {
+        if (this.saldo >= cantidad) {
+            this.saldo -= cantidad;
+        } else {
+            console.log("No hay suficiente dinero.");
+        }
+    },
+    mostrarSaldo: function () {
+        console.log(`El saldo actual es: ${this.saldo}`);
+    }
+
+}
